@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   color: #fff;
+  margin-top: 20px;
 }
 
 .userInputWrapper {
@@ -23,6 +24,8 @@
   justify-content: center;
   background-color: #1c191d;
   border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .inputForm {
@@ -56,4 +59,17 @@
   align-items: center;
   font-size: 14px !important;
   margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .userInputWrapper {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    background-color: #1c191d;
+    border-radius: 10px;
+  }
 }

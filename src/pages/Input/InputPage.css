@@ -1,7 +1,15 @@
 .inputPage {
   /* background-color: rgb(221, 221, 185); */
-  height: 100vh;
+  /* height: 100vh; */
 }
 .inputPageWrapper {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .inputPageWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }

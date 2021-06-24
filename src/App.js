@@ -14,19 +14,21 @@ function App() {
   console.log(userInput);
   return (
     <UserContext.Provider value={{ userInput, setUserInput, bills, setBills }}>
-      <Router>
-        <Switch>
-          <Route path="/confirm">
-            <ConfirmContract />
-          </Route>
-          <Route path="/edit">
-            <PreviewAndEdit />
-          </Route>
-          <Route path="/" exact>
-            <InputPage />
-          </Route>
-        </Switch>
-      </Router>
+      <div className="app">
+        <Router>
+          <Switch>
+            <Route path="/confirm">
+              <ConfirmContract />
+            </Route>
+            <Route path="/edit">
+              <PreviewAndEdit />
+            </Route>
+            <Route path="/" exact>
+              <InputPage />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     </UserContext.Provider>
   );
 }

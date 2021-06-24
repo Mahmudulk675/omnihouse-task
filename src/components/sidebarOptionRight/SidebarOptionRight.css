@@ -1,13 +1,13 @@
 .sidebarOptionRight {
   flex: 8;
   background-color: #201b20;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 .sidebarRightWrapper {
   margin-left: 10px;
   font-size: 12px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .sidebarRightTitle {
@@ -55,4 +55,13 @@
 
 .sidebarBottomListsTitle {
   color: #d278e2e1;
+}
+
+@media (max-width: 768px) {
+  .sidebarOptionRight {
+    background-color: #201b20;
+    margin-left: 10px;
+    font-size: 12px;
+    height: 600px;
+  }
 }

@@ -7,10 +7,17 @@
     rgba(45, 35, 43, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
-  height: 100vh;
-  width: 80vw;
+  /* height: 100vh; */
+  /* width: 80vw; */
   display: flex;
   /* align-items: center; */
   justify-content: center;
   /* color: #fff; */
+}
+
+@media (max-width: 768px) {
+  .previewAndEditBody {
+    display: flex;
+    flex-direction: column;
+  }
 }

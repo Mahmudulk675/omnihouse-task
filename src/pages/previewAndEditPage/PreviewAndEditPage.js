@@ -6,7 +6,7 @@ import "./PreviewAndEditPage.css";
 const PreviewAndEdit = () => {
   return (
     <div className="previewAndEditPage">
-      <div className="peWrapper">
+      <div className="previewAndEditWrapper">
         <Sidebar previewAndEditPage />
         <PreviewAndEditBody />
       </div>
