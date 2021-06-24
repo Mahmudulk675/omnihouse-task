@@ -1,0 +1,59 @@
+.userInput {
+  flex: 9;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(7, 7, 26, 0.932) 0%,
+    rgba(45, 35, 43, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.userInputWrapper {
+  height: 60%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c191d;
+  border-radius: 10px;
+}
+
+.inputForm {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  justify-content: center;
+}
+
+.formValue {
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid rgb(117, 11, 11);
+  border-radius: 5px;
+  width: 125%;
+  background-color: #1b171c;
+  color: #fff;
+}
+
+.formBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.linkBtn {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px !important;
+  margin-left: 20px;
+}

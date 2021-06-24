@@ -1,0 +1,7 @@
+.inputPage {
+  /* background-color: rgb(221, 221, 185); */
+  height: 100vh;
+}
+.inputPageWrapper {
+  display: flex;
+}

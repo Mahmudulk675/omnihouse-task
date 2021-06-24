@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import ConfirmContract from "./pages/confirmContract/ConfirmContract";
+import InputPage from "./pages/Input/InputPage";
+import PreviewAndEdit from "./pages/previewAndEditPage/PreviewAndEditPage";
+
+export const UserContext = createContext();
 
 function App() {
+  const [userInput, setUserInput] = useState([]);
+  const [bills, setBills] = useState([]);
+  console.log(bills);
+  console.log(userInput);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContext.Provider value={{ userInput, setUserInput, bills, setBills }}>
+      <Router>
+        <Switch>
+          <Route path="/confirm">
+            <ConfirmContract />
+          </Route>
+          <Route path="/edit">
+            <PreviewAndEdit />
+          </Route>
+          <Route path="/" exact>
+            <InputPage />
+          </Route>
+        </Switch>
+      </Router>
+    </UserContext.Provider>
   );
 }
 

@@ -1,0 +1,29 @@
+.sidebarOptionLeft {
+  flex: 4;
+  background-color: #161516;
+  color: white;
+  height: 100vh;
+}
+
+.sidebarOptionLeftItems {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarOptionLeftItems {
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+
+.sidebarLeftIcons {
+  font-size: 30px !important;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: purple;
+  cursor: pointer;
+}
+
+.sidebarLeftText {
+  font-size: 12px;
+}

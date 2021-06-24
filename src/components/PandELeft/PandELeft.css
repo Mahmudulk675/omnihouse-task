@@ -1,0 +1,57 @@
+.PandELeft {
+  flex: 7;
+  background-color: #1c191ded;
+  height: 90%;
+  /* width: 70%; */
+  margin: 20px;
+  color: #fff;
+}
+
+.PandELeftWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.PandETitle {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.PandESectionTop {
+  display: flex;
+  background-color: #34331c;
+  margin: 10px;
+  height: 200px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.PandESectionTextBoxTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.PandESectionBottom {
+  display: flex;
+  background-color: #34331c;
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  border-radius: 10px;
+  justify-content: flex-start;
+}
+
+.PandESectionTextBoxBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+li {
+  list-style: none;
+}
